@@ -1,0 +1,17 @@
+# Ignore the SQLite database
+*.sqlite
+database.sqlite
+
+# Ignore user uploads
+uploads/
+images/products/
+
+# Ignore local OS files
+.DS_Store
+Thumbs.db
+
+# Ignore local environment configs
+.env
+config.php
+temp/
+scratch/
