@@ -15,7 +15,7 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 
 # Ensure uploads directory is writable (assuming it might be used)
-RUN chmod -R 777 /var/www/html/uploads
+RUN mkdir -p /var/www/html/uploads && chmod -R 777 /var/www/html/uploads
 
 # Expose port 80
 EXPOSE 80
